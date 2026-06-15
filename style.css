@@ -20,3 +20,28 @@ form select:focus {
 
     border: 1px solid #ffcc00;
 }
+
+/* Push 4 — Alok | Button Animations */
+button {
+  margin: 5px;
+  padding: 8px 12px;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: #ffcc00;
+  color: #121212;
+
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: ease 0.3s;
+}
+
+button:hover {
+  background-color: #ffd633;
+
+  box-shadow: #ffcc00 1px 1px 4px;
+
+  scale: 1.1;
+}
