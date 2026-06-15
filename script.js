@@ -34,3 +34,14 @@ function editTransaction(index) {
 
     editIndex = index;
 }
+
+/* push 13 - alok | Implement delete transaction */
+
+function deleteTransaction(index) {
+
+    transactions.splice(index, 1);
+
+    saveData();
+
+    renderTransactions();
+}
