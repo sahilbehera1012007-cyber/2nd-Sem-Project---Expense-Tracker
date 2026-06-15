@@ -1,1 +1,22 @@
+/* Push 3 — Uttkarsh | Form Styling */
+form input,
+form select {
+    margin: 5px;
+    padding: 8px;
 
+    border: none;
+    border-radius: 4px;
+
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+
+    border: 1px solid #ffcc00;
+}
