@@ -2,15 +2,35 @@
 const form = document.getElementById("transaction-form");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const desc = document.getElementById("desc").value;
-  const amount = parseFloat(document.getElementById("amount").value);
-  const type = document.getElementById("type").value;
+    const desc = document.getElementById("desc").value;
+    const amount = parseFloat(document.getElementById("amount").value);
+    const type = document.getElementById("type").value;
 
-  transactions.push({ desc, amount, type });
+    transactions.push({ desc, amount, type });
 
-  saveData();
-  renderTransactions();
-  form.reset();
+    saveData();
+    renderTransactions();
+    form.reset();
 });
+
+/* Push 5 — Alok | Edit transaction logic */
+
+let editIndex = null;
+
+function editTransaction(index) {
+
+    const t = transactions[index];
+
+    document.getElementById("desc").value =
+        t.desc;
+
+    document.getElementById("amount").value =
+        t.amount;
+
+    document.getElementById("type").value =
+        t.type;
+
+    editIndex = index;
+}
