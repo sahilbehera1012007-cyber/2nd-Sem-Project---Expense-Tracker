@@ -53,18 +53,21 @@ button:hover {
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
 
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 
   background-color: #121212;
   color: white;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .container {
-  margin: 10px;
+  margin: 10px 10px 30px 10px;
   width: 590px;
   padding: 20px;
 
@@ -78,4 +81,78 @@ h1,
 h2,
 p span {
   color: #ffcc00;
+}
+
+/* Push 14 — Alok | Team Section Styling */
+#team {
+  width: 590px;
+  margin: 10px;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+  box-sizing: border-box;
+}
+
+#team h2.section-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #ffcc00;
+  font-size: 1.8rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.team-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  border-color: #ffcc00;
+  box-shadow: 0 6px 15px rgba(255, 204, 0, 0.25);
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffcc00, #ffa500);
+  color: #121212;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover .avatar {
+  transform: rotate(360deg) scale(1.05);
+}
+
+.team-card h4 {
+  margin: 5px 0;
+  color: #f1f1f1;
+  font-size: 1.1rem;
+}
+
+.team-card p {
+  margin: 0;
+  color: #aaa;
+  font-size: 0.9rem;
 }
