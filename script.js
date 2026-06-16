@@ -126,4 +126,18 @@ function saveData() {
     "transactions",
     JSON.stringify(transactions)
   );
+//Disha rai
+const cancelBtn =
+document.getElementById("cancel-btn");
+
+cancelBtn.addEventListener(
+  "click",
+  clearInputs
+);
+
+function clearInputs() {
+
+  form.reset();
+
+  editIndex = null;
 }
