@@ -45,3 +45,37 @@ button:hover {
 
   scale: 1.1;
 }
+
+
+
+/*Push 5 - Abhishek | Add dark theme UI*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #121212;
+  color: white;
+}
+
+.container {
+  margin: 10px;
+  width: 590px;
+  padding: 20px;
+
+  background-color: black;
+  border-radius: 8px;
+
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+h1,
+h2,
+p span {
+  color: #ffcc00;
+}
