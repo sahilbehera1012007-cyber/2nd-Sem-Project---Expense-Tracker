@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Expense Tracker</h1>
+
+  <form id="transaction-form">
+    <input type="text" id="desc" placeholder="Description" required>
+
+    <input type="number" id="amount" step="0.01" placeholder="Amount" required>
+
+    <select id="type">
+      <option value="Income">Income</option>
+      <option value="Expense">Expense</option>
+    </select>
+
+    <button id="cancel-btn" type="button">Cancel</button>
+    <button type="submit">Add</button>
+  </form>
+
+  <h2>Transactions</h2>
+  <ul id="transaction-list"></ul>
+
+  <h2>Summary</h2>
+
+  <p>Total Income:
+    <span id="total-income">0</span>
+  </p>
+
+  <p>Total Expense:
+    <span id="total-expense">0</span>
+  </p>
+
+  <p>Balance:
+    <span id="balance">0</span>
+  </p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
