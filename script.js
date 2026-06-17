@@ -116,9 +116,9 @@ function updateSummary() {
     .filter(t => t.type === "Expense")
     .reduce((sum, t) => sum + t.amount, 0);
 
-  totalIncomeEl.textContent = income.toFixed(2);
-  totalExpenseEl.textContent = expense.toFixed(2);
-  balanceEl.textContent = (income - expense).toFixed(2);
+  totalIncomeEl.textContent = "₹" + income.toFixed(2);
+  totalExpenseEl.textContent = "₹" + expense.toFixed(2);
+  balanceEl.textContent = "₹" + (income - expense).toFixed(2);
 }
 
 // Initial render on page load
