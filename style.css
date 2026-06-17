@@ -81,6 +81,17 @@ ul {
   padding: 0;
 }
 
+/* List Item (li) Styling */
+li {
+  margin: 5px 0;
+  padding: 8px;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid #ffcc00;
+  border-radius: 5px;
+}
 
 h1,
 h2,
