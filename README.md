@@ -21,11 +21,8 @@
 ## 🏗️ Tech Stack
 
 - **Frontend:** HTML, CSS, JavaScript  
-- **Backend:** _Update this (e.g., Node.js / Java / Python) if used_  
-- **Database:** _Update this (e.g., MySQL / MongoDB / LocalStorage)_  
 - **Tools:** Git, GitHub, VS Code  
 
-> Update the stack above according to your actual project implementation.
 
 ---
 
@@ -94,8 +91,6 @@ Explain here what URL to open (for example, `http://localhost:3000`).
 
 
 ```
-
-Take screenshots from your browser, save them in an `assets/` or `screenshots/` folder, and update the paths above.
 
 ---
 
