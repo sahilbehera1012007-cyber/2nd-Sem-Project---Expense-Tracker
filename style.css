@@ -72,6 +72,13 @@ body {
   box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
 }
 
+/* Push 6 - Bhagyashree Patil | Add ul and li styling */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 h1,
 h2,
 p span {
